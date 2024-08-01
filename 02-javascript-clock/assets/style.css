@@ -1,0 +1,80 @@
+:root {
+  --primary: #0f172a
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+
+.wrapper {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-block: 10rem;
+  ;
+  gap: 5rem;
+}
+
+.clock {
+  --size: 400px;
+  display: flex;
+  flex-shrink: 0;
+  border: 15px solid var(--primary);
+  height: var(--size);
+  width: var(--size);
+  border-radius: 50%;
+  position: relative;
+}
+
+.clock__center {
+  --size: 20px;
+  width: var(--size);
+  height: var(--size);
+  background-color: var(--primary);
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.clock__hand {
+  --rotate: 0deg;
+  background-color: var(--primary);
+  width: 10px;
+  height: var(--size);
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  transform: translateX(-50%) rotate(var(--rotate));
+  transform-origin: bottom;
+}
+
+.clock__hand--hour {
+  --size: 100px;
+  --rotate: 0deg;
+}
+
+.clock__hand--minute {
+  --size: 150px;
+  --rotate: 0deg;
+}
+
+.clock__hand--second {
+  --size: 160px;
+  --rotate: 0deg;
+  width: 8px;
+  background-color: red;
+}
