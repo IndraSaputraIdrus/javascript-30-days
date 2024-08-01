@@ -28,7 +28,7 @@ html {
 }
 
 .clock {
-  --size: 400px;
+  --size: 500px;
   display: flex;
   flex-shrink: 0;
   border: 15px solid var(--primary);
@@ -39,7 +39,7 @@ html {
 }
 
 .clock__center {
-  --size: 20px;
+  --size: 10px;
   width: var(--size);
   height: var(--size);
   background-color: var(--primary);
@@ -52,8 +52,6 @@ html {
 
 .clock__hand {
   --rotate: 0deg;
-  background-color: var(--primary);
-  width: 10px;
   height: var(--size);
   position: absolute;
   left: 50%;
@@ -63,8 +61,9 @@ html {
 }
 
 .clock__hand--hour {
-  --size: 100px;
+  --size: 130px;
   --rotate: 0deg;
+  color: #4338ca;
 }
 
 .clock__hand--minute {
@@ -73,8 +72,13 @@ html {
 }
 
 .clock__hand--second {
-  --size: 160px;
+  --size: 200px;
   --rotate: 0deg;
-  width: 8px;
-  background-color: red;
+  color: #be185d;
+}
+
+.label {
+  display: block;
+  margin: 5px;
+  padding: 2px;
 }
