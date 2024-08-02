@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/style.css">
+  <title>Day03</title>
+</head>
+
+<body>
+
+
+  <div class="wrapper">
+
+    <div class="container">
+
+      <div class="form">
+        <div class="form__control">
+          <label for="spacing">Spacing</label>
+          <input min="10" max="100" value="10" id="spacing" type="range" class="form__control--range">
+        </div>
+        <div class="form__control">
+          <label for="blur">Blur</label>
+          <input min="0" max="25" value="0" id="blur" type="range" class="form__control--range">
+        </div>
+        <div class="form__control">
+          <label for="base">Color</label>
+          <input id="base" type="color" class="form__control--color" value="#fbbf24">
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="./assets/lam-skin-epic.jpg" alt="lam" class="card__image">
+      </div>
+
+    </div>
+
+  </div>
+
+  <script type="module" src="main.js"></script>
+</body>
+
+</html>
