@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply flex min-h-screen items-center justify-center bg-primary text-secondary
+  }
+}
+
+@layer components {
+  .suggestion-result {
+    @apply py-1 px-2 transition rounded relative cursor-pointer
+  }
+
+  .suggestion-result:hover {
+    @apply bg-muted
+  }
+
+  .hl {
+    @apply font-bold text-primary bg-yellow-400
+  }
+}

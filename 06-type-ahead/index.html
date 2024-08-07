@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <title>Day 06</title>
+  </head>
+
+  <body>
+    <div
+      id="container"
+      class="border border-muted rounded-lg max-w-lg w-full divide-y divide-muted"
+    >
+      <div class="flex items-center gap-3 p-4">
+        <!--search icon  -->
+        <svg
+          class="size-4 text-muted-foreground"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="feather feather-search"
+        >
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input
+          id="search-input"
+          autocomplete="off"
+          class="w-full text-base bg-primary placeholder:text-muted-foreground focus:outline-none"
+          type="text"
+          placeholder="Search cities or state"
+        />
+      </div>
+
+      <div class="mb-4">
+        <p class="p-4 text-muted-foreground text-sm">
+          Result (<span id="result-count">0</span>)
+        </p>
+
+        <ul
+          id="result"
+          class="px-2 pb-4 flex gap-3 flex-col tracking-wider max-h-60 overflow-y-auto"
+        >
+          <li class="text-center italic text-muted">Not found</li>
+          <li class="hidden suggestion-result hl"></li>
+        </ul>
+      </div>
+    </div>
+
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
